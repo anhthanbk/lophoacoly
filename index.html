@@ -5,11 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sen:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <!-- style css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Trang chủ</title>
   </head>
-  <body>
-    <h1>le anh than</h1>
+  <body style="height: 10000px">
+    <!-- header -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body">
+          <!-- logo -->
+          <!-- img.logo -->
+          <img
+            src="./assets/img/logo hl.png"
+            alt="Lớp hoá cô lý"
+            class="logo"
+            height="100px"
+          />
+          <!-- navigation -->
+          <!-- nav.nav>ul>li*4>a{HOME} -->
+          <nav class="nav">
+            <ul>
+              <li class="active"><a href="#!">TRANG CHỦ</a></li>
+              <li><a href="#!">KHOÁ HỌC</a></li>
+              <li><a href="#!">ĐƠN GIÁ</a></li>
+              <li><a href="#!">CHI TIẾT</a></li>
+            </ul>
+          </nav>
+          <!-- button -->
+          <!-- .action>a.btn{Sign up} -->
+          <div class="action"><a href="#!" class="btn sign-up">Đăng ký</a></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="hero">
+        <div class="main-content">
+          <div class="body">
+            <!-- hero left -->
+            <div class="media-block">
+              <img
+                src="./assets/img/giadinh.jpg"
+                alt="gia dinh co ly"
+                class="img"
+              />
+              <div class="hero-summary">
+                <!-- item 1 -->
+                <div class="item">
+                  <div class="icon icon1">
+                    <img src="./assets/icon/item 1.svg" alt="khoá học" />
+                  </div>
+                  <div class="info">
+                    <p class="lable">3 Buổi/tuần</p>
+                    <p class="title">Lớp 12</p>
+                  </div>
+                </div>
+                <!-- item 1 -->
+                <div class="item">
+                  <div class="icon icon2">
+                    <img src="./assets/icon/item 2.svg" alt="khoá học" />
+                  </div>
+                  <div class="info">
+                    <p class="lable">2 Buổi/tuần</p>
+                    <p class="title">Lớp 11</p>
+                  </div>
+                </div>
+                <!-- item 1 -->
+                <div class="item">
+                  <div class="icon icon3">
+                    <img src="./assets/icon/item 3.svg" alt="khoá học" />
+                  </div>
+                  <div class="info">
+                    <p class="lable">2 Buổi/tuần</p>
+                    <p class="title">Lớp 10</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- hero right -->
+            <div class="content-block">
+              <h1 class="heading">
+                Lớp hoá cô Lý- 11/184/Phan Chu Trinh- TP Huế
+              </h1>
+              <p class="des">
+                GV luyện thi môn KHTN, Hoá & tốt nghiệp THPTQG môn Hoá ở 11/184
+                Phan Chu Trinh,TP Huế_SĐT: 0984484254
+              </p>
+              <div class="cta-group">
+                <a href="#!" class="btn hero-cta">Xem khoá học</a>
+                <button class="watch-video">
+                  <div class="icon">
+                    <img src="./assets/icon/watchvideo.svg" alt="watch video" />
+                  </div>
+                  <span>Video phòng</span>
+                </button>
+              </div>
+              <p class="des des-recent">Số người đăng ký</p>
+              <p class="des des-number">
+                <strong>50K </strong>Học sinh <strong>70+</strong> Khoá học
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
