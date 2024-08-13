@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 :root {
-  --header-bg: #e7f0e8;
+  --header-bg: rgb(72, 212, 200);
 }
 html {
   font-size: 62.5%;
@@ -16,15 +16,15 @@ a {
 }
 /* ========common========= */
 .container {
-  width: 1170px;
+  width: 1305px;
   margin: 0 auto;
   max-width: calc(100% - 48px);
 }
 .btn {
   display: inline-block;
   min-width: 160px;
-  line-height: 60px;
-  background-color: #000;
+  line-height: 50px;
+  background-color: red;
   color: #fff;
   text-align: center;
   font-size: 1.8rem;
@@ -35,12 +35,14 @@ a {
   opacity: 70%;
 }
 /* =======header======= */
-.header {
+.header_fixed {
   padding-top: 10px;
-  background: var(--header-bg);
-  min-height: 100vh;
+  position: sticky;
+  z-index: 1;
+  top: -28px;
+  background: yellow;
 }
-.header_top {
+.header_top .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,8 +62,8 @@ a {
 .navbar__link:hover,
 .navbar__link--active {
   text-shadow: 1px 0 0 currentColor;
-  padding: 20px;
-  background-color: rgb(73, 212, 200);
+  padding: 15px;
+  background-color: var(--header-bg);
   border-radius: 999px;
 }
 .navbar__link--active::before {
@@ -77,4 +79,42 @@ a {
 }
 .action__btn--tracuu {
   width: 250px;
+}
+.header_mid {
+  background: var(--header-bg);
+}
+.header_mid .container {
+  padding: 5px 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.icon__list {
+  display: flex;
+}
+.icon__item {
+  margin-left: 10px;
+}
+.header_mid .phone {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 0 20px;
+  line-height: 30px;
+}
+.header_mid .phone_icon {
+  margin: 10px 10px 0 0;
+}
+.header_mid .phone_number {
+  color: rgb(14, 31, 105);
+  font-weight: bold;
+}
+/* ===========MAIN CONTENT=========== */
+.main_content .container {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+.main_content .slideshow {
+  width: 70%;
 }
