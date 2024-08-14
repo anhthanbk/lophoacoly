@@ -3,6 +3,7 @@
 }
 :root {
   --header-bg: rgb(72, 212, 200);
+  --bg-all: rgb(252, 252, 229);
 }
 html {
   font-size: 62.5%;
@@ -40,7 +41,7 @@ a {
   position: sticky;
   z-index: 1;
   top: -28px;
-  background: yellow;
+  background: var(--bg-all);
 }
 .header_top .container {
   display: flex;
@@ -96,24 +97,27 @@ a {
   margin-left: 10px;
 }
 .header_mid .phone {
+  padding: 0;
   display: flex;
   align-items: center;
   margin-left: 10px;
-  padding: 0 20px;
+  padding: 10px 20px;
   line-height: 30px;
+  color: black;
 }
-.header_mid .phone_icon {
-  margin: 10px 10px 0 0;
-}
-.header_mid .phone_number {
-  color: rgb(14, 31, 105);
+.header_mid .phone-number {
+  margin-left: 5px;
   font-weight: bold;
 }
 /* ===========MAIN CONTENT=========== */
+.main_content {
+  background: var(--bg-all);
+}
 .main_content .container {
   display: flex;
   padding-top: 10px;
   justify-content: space-between;
+  background: --;
 }
 .main_content .slideshow {
   width: 70%;
