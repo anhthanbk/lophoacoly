@@ -10,6 +10,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <!-- link box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- style CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Embed font -->
@@ -99,6 +104,8 @@
     <title>Lớp hóa cô lý</title>
   </head>
   <body style="height: 50000px">
+    <!-- hiệu ứng tuyết rơi -->
+    <div id="snowflakes"></div>
     <header class="header_fixed">
       <!-- header top -->
       <div class="header_top">
@@ -202,29 +209,31 @@
       <!-- phần khóa học và chi tiết -->
       <div class="main_content">
         <div class="container">
-          <ul class="slideshow">
-            <li class="slide fade">
+          <div class="slide-show">
+            <div class="list-images">
               <img src="./assets/img/khoa 1.jpg" alt="" width="100%" />
-            </li>
-            <li class="slide fade">
               <img src="./assets/img/khoa 2.jpg" alt="" width="100%" />
-            </li>
-            <li class="slide fade">
               <img src="./assets/img/khoa 3.jpg" alt="" width="100%" />
-            </li>
-          </ul>
+            </div>
+            <div class="btns">
+              <div class="btn-left btn"><i class="bx bx-chevron-left"></i></div>
+              <div class="btn-right btn">
+                <i class="bx bx-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+
           <div class="course">
             <div class="quick_connection">
               <p>LIÊN KẾT NHANH</p>
               <p>KHÓA 2023</p>
               <p>KHÓA 2024</p>
-              <p>KHÓA 2025 sdsd</p>
-              <i class="fa-brands fa-facebook">hehe</i>
+              <p>KHÓA 2025</p>
             </div>
-            <div class="facebook_detail"></div>
           </div>
         </div>
       </div>
     </main>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
